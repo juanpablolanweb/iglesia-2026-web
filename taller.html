@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taller de Restauración Matrimonial para Iglesias | Rev. Juan Pablo Lanterna</title>
+<meta name="description" content="Jornada de un sábado para fortalecer los matrimonios de tu congregación. Fundamento bíblico, confesiones luteranas y herramientas prácticas. Abierto a toda iglesia cristiana.">
+<link rel="canonical" href="https://restauracionmatrimonial.cl/taller.html">
+
+<meta property="og:title" content="Taller de Restauración Matrimonial para Iglesias">
+<meta property="og:description" content="Jornada de un sábado para fortalecer los matrimonios de tu congregación. Abierto a toda iglesia cristiana.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://restauracionmatrimonial.cl/taller.html">
+<meta property="og:locale" content="es_CL">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Taller de Restauración Matrimonial",
+  "description": "Jornada de un sábado para fortalecer los matrimonios de tu congregación con fundamento bíblico, confesiones luteranas y herramientas prácticas.",
+  "provider": {
+    "@type": "Person",
+    "name": "Rev. Juan Pablo Lanterna",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Iglesia Luterana Confesional de Chile"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "200000",
+    "priceCurrency": "CLP",
+    "description": "Jornada completa con 10 guías impresas incluidas"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "onsite",
+    "duration": "P1D",
+    "location": {
+      "@type": "City",
+      "name": "Valparaíso"
+    }
+  }
+}
+</script>
+
+<script defer data-domain="restauracionmatrimonial.cl" src="https://plausible.io/js/script.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink-night: #101B2E;
+    --ink-night-2: #182645;
+    --wine: #7A1F2B;
+    --wine-bright: #9C2C39;
+    --rose-white: #F6F1E7;
+    --paper: #FBF8F2;
+    --gold: #B68A4E;
+    --gold-soft: #D9C39A;
+    --ink-text: #1B2230;
+    --ink-muted: #5B6378;
+    --line: rgba(16,27,46,0.12);
+
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Source Sans 3', system-ui, sans-serif;
+    --mono: ui-monospace, 'Cascadia Mono', 'Segoe UI Mono', monospace;
+
+    --container: 780px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink-text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(16,27,46,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(182,138,78,0.25);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    max-width: 1080px;
+    margin: 0 auto;
+    gap: 16px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--rose-white);
+  }
+  .brand-name {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  .brand-sub {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    display: block;
+    margin-top: 2px;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .nav-links a {
+    color: var(--rose-white);
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  .nav-links a:hover { opacity: 1; }
+
+  .cta-button {
+    background: var(--wine);
+    color: var(--rose-white);
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--wine-bright);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .cta-button:hover { background: var(--wine-bright); transform: translateY(-1px); }
+
+  .page-hero {
+    background: radial-gradient(ellipse 120% 80% at 50% -10%, var(--ink-night-2), var(--ink-night) 60%);
+    color: var(--rose-white);
+    padding: 80px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 85% 15%, rgba(182,138,78,0.10), transparent 45%),
+      radial-gradient(circle at 8% 85%, rgba(122,31,43,0.18), transparent 50%);
+    pointer-events: none;
+  }
+  .page-hero .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .page-hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4.5vw, 2.8rem);
+    font-weight: 600;
+    line-height: 1.12;
+    margin-bottom: 20px;
+    color: var(--rose-white);
+    position: relative;
+    z-index: 1;
+  }
+  .page-hero h1 em {
+    font-style: italic;
+    color: var(--gold-soft);
+    font-weight: 500;
+  }
+  .page-hero p {
+    max-width: 54ch;
+    margin: 0 auto;
+    color: rgba(246,241,231,0.75);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-pills {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 0.88rem;
+    color: rgba(246,241,231,0.6);
+    margin-top: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-pills strong {
+    color: var(--gold-soft);
+  }
+
+  .content {
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .pain-box {
+    background: var(--rose-white);
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    border-left: 3px solid var(--wine);
+  }
+  .pain-box h2 {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--ink-night);
+    margin-bottom: 14px;
+  }
+  .pain-box ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+  .pain-box li {
+    color: var(--ink-muted);
+    font-size: 0.98rem;
+    line-height: 1.8;
+  }
+  .pain-box p {
+    color: var(--ink-text);
+    font-size: 0.98rem;
+  }
+  .pain-box .invite {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+  }
+
+  .section-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .video-wrap {
+    background: #000;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    position: relative;
+    padding-top: 56.25%;
+  }
+  .video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  .video-caption {
+    font-size: 0.92rem;
+    color: var(--ink-muted);
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  .program-row {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+  }
+  .program-row:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .program-num {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .program-row h3 {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    color: var(--ink-night);
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .program-row p {
+    color: var(--ink-muted);
+    font-size: 0.92rem;
+  }
+
+  .theology-note {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .theology-note p {
+    font-size: 0.95rem;
+    color: var(--ink-muted);
+    line-height: 1.6;
+  }
+  .theology-note .refs {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: var(--ink-muted);
+    opacity: 0.7;
+    margin-top: 8px;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .benefit-card {
+    background: var(--rose-white);
+    border-radius: 6px;
+    padding: 20px;
+  }
+  .benefit-card h3 {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink-night);
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  .benefit-card p {
+    font-size: 0.92rem;
+    color: var(--ink-muted);
+  }
+
+  .how-box {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+  }
+  .how-step {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 10px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+  }
+  .how-step .num {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .price-footer {
+    background: var(--ink-night);
+    border-radius: 6px;
+    padding: 36px 32px;
+    text-align: center;
+    color: var(--rose-white);
+    margin-bottom: 40px;
+  }
+  .price-amount {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .price-detail {
+    font-size: 0.88rem;
+    color: rgba(246,241,231,0.55);
+    margin-bottom: 24px;
+  }
+  .price-footer .attr {
+    font-size: 0.8rem;
+    color: rgba(246,241,231,0.4);
+    margin-top: 16px;
+  }
+
+  footer {
+    background: var(--ink-night);
+    color: rgba(246,241,231,0.7);
+    padding: 40px 24px;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  footer a { color: var(--gold-soft); }
+  footer a:hover { color: var(--rose-white); }
+
+  @media (max-width: 720px) {
+    .page-hero { padding: 56px 20px 48px; }
+    .content { padding: 40px 20px 64px; }
+    .benefits-grid { grid-template-columns: 1fr; }
+    .pain-box { padding: 20px 22px; }
+    .how-box { padding: 20px 22px; }
+    .nav-links { gap: 16px; }
+    .hero-pills { gap: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <svg viewBox="0 0 100 100" width="28" height="28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#B68A4E" stroke-width="3"/>
+        <path d="M50 30 C38 18, 18 22, 18 40 C18 56, 50 78, 50 78 C50 78, 82 56, 82 40 C82 22, 62 18, 50 30 Z" fill="#7A1F2B"/>
+        <rect x="44" y="32" width="12" height="40" fill="#101B2E"/>
+        <rect x="32" y="46" width="36" height="11" fill="#101B2E"/>
+      </svg>
+      <div>
+        <span class="brand-name">Restauración Matrimonial</span>
+        <span class="brand-sub">Iglesia Luterana Confesional de Chile</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="recursos.html">Recursos</a>
+      <a href="index.html#reservar">Consejería</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="eyebrow">Taller para iglesias y comunidades cristianas</div>
+  <h1>Los matrimonios de tu congregación <em>pueden fortalecerse</em></h1>
+  <p>Una jornada de un sábado donde las parejas de tu iglesia trabajan juntas sobre fundamento bíblico, confesiones luteranas y herramientas prácticas para la vida conyugal. Abierto a toda iglesia cristiana, trabajado desde una convicción luterana confesional.</p>
+  <div class="hero-pills">
+    <span><strong>1 día</strong> · jornada completa</span>
+    <span><strong>10 guías impresas</strong> · incluidas</span>
+    <span><strong>Confesional</strong> · luterano</span>
+  </div>
+</section>
+
+<div class="content">
+
+  <div class="pain-box">
+    <h2>¿Reconoces alguna de estas situaciones?</h2>
+    <ul>
+      <li>Parejas de tu congregación que se están distanciando en silencio</li>
+      <li>Matrimonios jóvenes que postergan la familia por el éxito profesional</li>
+      <li>Divorcios que podrían haberse evitado con acompañamiento a tiempo</li>
+      <li>Falta de herramientas pastorales para hablar de sexualidad y conflictos conyugales</li>
+      <li>Jóvenes que salen de la iglesia y pierden el rumbo en su vida afectiva</li>
+    </ul>
+    <p>Este taller equipa a las parejas de tu comunidad con lo que la Escritura y la tradición luterana enseñan sobre el matrimonio, y les da herramientas concretas para aplicar en casa.</p>
+    <p class="invite">Si eres pastor o líder de una iglesia católica, evangélica, pentecostal o reformada, este taller también es para tu comunidad. El fundamento bíblico es compartido; la postura confesional luterana enriquece sin excluir.</p>
+  </div>
+
+  <div class="section-label">Ejemplo: así comienza cada sesión</div>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube.com/embed/OqWtPVWW-Mw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <p class="video-caption">Cada sesión inicia con un video introductorio que abre la conversación. A partir de ahí, se examina el texto bíblico correspondiente y se trabajan las preguntas de la guía del alumno en grupo. El enfoque es participativo: las parejas dialogan entre sí y con la comunidad.</p>
+
+  <div class="section-label">Programa de la jornada</div>
+
+  <div style="margin-bottom: 40px;">
+    <div class="program-row">
+      <div class="program-num">01</div>
+      <div>
+        <h3>Las cuerdas de salvamento del amor</h3>
+        <p>Introducción: qué sostiene un matrimonio y qué lo destruye.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">02</div>
+      <div>
+        <h3>El juego del poder y la culpa</h3>
+        <p>Dinámicas destructivas en la pareja y cómo reconocerlas.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">03</div>
+      <div>
+        <h3>Lo que más daño nos hace</h3>
+        <p>Identificar las heridas que se acumulan y cómo dejan de ser invisibles.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">04</div>
+      <div>
+        <h3>Cómo fastidiar tu matrimonio</h3>
+        <p>Un ejercicio honesto sobre lo que hacemos mal sin darnos cuenta.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">05</div>
+      <div>
+        <h3>Fidelidad</h3>
+        <p>Qué significa ser fiel más allá de lo obvio.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">06</div>
+      <div>
+        <h3>Libertad</h3>
+        <p>Autonomía sana dentro del matrimonio: ni dependencia ni abandono.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">07</div>
+      <div>
+        <h3>Presupuesto y finanzas del hogar</h3>
+        <p>El dinero como fuente de conflicto o de bendición según cómo se administre.</p>
+      </div>
+    </div>
+    <div class="program-row">
+      <div class="program-num">08</div>
+      <div>
+        <h3>Familia y vocación</h3>
+        <p>El hogar como la vocación más noble y reflejo de la historia de la salvación.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="theology-note">
+    <div class="section-label">Fundamento teológico</div>
+    <p>Cada bloque se trabaja con la <em>Guía de Entendimiento para Matrimonios</em> — un material con textos bíblicos, preguntas de discusión, lecciones del Catecismo Mayor y Menor, y citas de Lutero y Chemnitz. Parte del material es del Centro de Misericordia de LCMS, usado con permiso.</p>
+    <div class="refs">Textos base: Génesis 1:27-31 · Génesis 2:18-25 · 1 Corintios 7:1-17 · Efesios 5:21-30</div>
+  </div>
+
+  <div class="section-label">Qué gana tu comunidad</div>
+  <div class="benefits-grid">
+    <div class="benefit-card">
+      <h3>Matrimonios fortalecidos</h3>
+      <p>Parejas que aprenden a hablar de lo que duele, antes de que sea tarde.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Prevención del divorcio</h3>
+      <p>Herramientas concretas que las parejas se llevan a casa y aplican.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Jóvenes orientados</h3>
+      <p>Una visión bíblica del matrimonio frente a la presión cultural.</p>
+    </div>
+    <div class="benefit-card">
+      <h3>Apoyo para el pastor</h3>
+      <p>Material probado en instituto bíblico que puedes reusar en tu congregación.</p>
+    </div>
+  </div>
+
+  <div class="how-box">
+    <div class="section-label" style="color: var(--wine);">Cómo funciona</div>
+    <div class="how-step">
+      <span class="num">1.</span><span>Coordíname por WhatsApp y acordamos la fecha.</span>
+    </div>
+    <div class="how-step">
+      <span class="num">2.</span><span>Envío tareas previas de lectura para los participantes (breves).</span>
+    </div>
+    <div class="how-step">
+      <span class="num">3.</span><span>Voy a tu iglesia el sábado con 10 guías impresas incluidas. Si necesitas más copias, te envío el archivo para que las imprimas localmente.</span>
+    </div>
+    <div class="how-step">
+      <span class="num">4.</span><span>Jornada completa con tus parejas: videos, enseñanza bíblica, discusión en grupo y ejercicios prácticos con la guía.</span>
+    </div>
+  </div>
+
+  <div class="price-footer">
+    <div class="price-amount">$200.000 CLP</div>
+    <div class="price-detail">Jornada completa · 10 guías impresas incluidas · Valparaíso y alrededores</div>
+    <a href="https://wa.me/56993043524?text=Hola%20pastor%2C%20me%20interesa%20el%20taller%20de%20restauraci%C3%B3n%20matrimonial%20para%20mi%20iglesia." target="_blank" rel="noopener" class="cta-button">Coordinar por WhatsApp</a>
+    <div class="attr">Rev. Juan Pablo Lanterna · Iglesia Luterana Confesional de Chile</div>
+  </div>
+
+</div>
+
+<footer>
+  <p><a href="index.html">Consejería individual</a> · <a href="recursos.html">Recursos</a> · <a href="taller.html">Taller para iglesias</a></p>
+  <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.6;">© 2026 Restauración Matrimonial — Iglesia Luterana Confesional de Chile. Consejería pastoral, no servicio clínico certificado.</p>
+</footer>
+
+</body>
+</html>
