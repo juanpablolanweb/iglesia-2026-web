@@ -414,6 +414,33 @@
   footer a { color: var(--gold-soft); }
   footer a:hover { color: var(--rose-white); }
 
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background: var(--ink-night);
+    border-top: 1px solid var(--gold);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  .sticky-cta.visible { transform: translateY(0); }
+  .sticky-cta .price-tag {
+    color: var(--rose-white);
+    font-family: var(--mono);
+    font-size: 0.85rem;
+  }
+  .sticky-cta .price-tag strong {
+    color: var(--gold-soft);
+    font-size: 1rem;
+  }
+
   @media (max-width: 720px) {
     .page-hero { padding: 56px 20px 48px; }
     .content { padding: 40px 20px 64px; }
@@ -422,6 +449,7 @@
     .how-box { padding: 20px 22px; }
     .nav-links { gap: 16px; }
     .hero-pills { gap: 16px; }
+    body { padding-bottom: 64px; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -430,6 +458,11 @@
 </style>
 </head>
 <body>
+
+<div class="sticky-cta" id="stickyCta">
+  <span class="price-tag">Taller <strong>$200.000 CLP</strong></span>
+  <a href="https://wa.me/56993043524?text=Hola%20pastor%2C%20me%20interesa%20el%20taller%20de%20restauraci%C3%B3n%20matrimonial%20para%20mi%20iglesia." target="_blank" rel="noopener" class="cta-button" style="padding:10px 18px;font-size:0.85rem;">Coordinar por WhatsApp</a>
+</div>
 
 <header>
   <div class="header-inner">
@@ -602,5 +635,18 @@
   <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.6;">© 2026 Restauración Matrimonial — Iglesia Luterana Confesional de Chile. Consejería pastoral, no servicio clínico certificado.</p>
 </footer>
 
+<script>
+(function(){
+  var bar = document.getElementById('stickyCta');
+  var shown = false;
+  window.addEventListener('scroll', function(){
+    var shouldShow = window.scrollY > 400;
+    if (shouldShow !== shown) {
+      shown = shouldShow;
+      bar.classList.toggle('visible', shown);
+    }
+  });
+})();
+</script>
 </body>
 </html>
