@@ -1,6 +1,7 @@
 {
   "name": "iglesia-2026-web",
   "compatibility_date": "2026-06-29",
+  "workers_dev": false,
   "assets": {
     "directory": "."
   }
