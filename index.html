@@ -25,7 +25,7 @@
   "description": "Consejería pastoral para matrimonios cristianos en crisis, desde una convicción luterana confesional.",
   "url": "https://restauracionmatrimonial.cl",
   "telephone": "+56993043524",
-  "priceRange": "$20.000 CLP por sesión",
+  "priceRange": "$2.000 CLP por sesión (oferta)",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Valparaíso",
@@ -512,6 +512,26 @@
     color: rgba(246,241,231,0.6);
     margin: 6px 0 20px;
   }
+  .price-offer-badge {
+    display: inline-block;
+    background: var(--wine);
+    color: var(--rose-white);
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .price-old {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: rgba(246,241,231,0.45);
+    text-decoration: line-through;
+    text-decoration-color: var(--gold-soft);
+    margin-right: 8px;
+  }
 
   .booking-meta {
     margin-top: 40px;
@@ -800,8 +820,9 @@
     </div>
     <div class="price-card">
       <a href="https://wa.me/56993043524?text=Hola%20pastor%2C%20me%20gustar%C3%ADa%20conversar%20sobre%20la%20consejer%C3%ADa%20matrimonial." class="cta-button" id="cta-whatsapp" target="_blank" rel="noopener" style="width:100%;justify-content:center;margin-bottom:20px;">Escríbeme por WhatsApp</a>
+      <span class="price-offer-badge">Oferta por tiempo limitado</span>
       <span class="price-currency">Luego, si deciden seguir</span>
-      <div class="price-amount" style="font-size:2.4rem;">$20.000</div>
+      <div class="price-amount" style="font-size:2.4rem;"><span class="price-old">$20.000</span>$2.000</div>
       <p class="price-unit">por sesión</p>
       <p class="price-unit" style="margin-top:8px;">Agendamos el día y la hora por WhatsApp.</p>
     </div>
